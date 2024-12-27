@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* CONFIG PADRÃO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --blue-dnc: #0C70F2;
+    --black-dnc: #303030;
+    --silver: #C9C9C9;
+    --font-default: 'Inter';
+}
+
+#navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: var(--black-dnc);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    #navegacao > button {
+       background-color: var(--blue-dnc);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+#menu li{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
