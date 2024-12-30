@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    outline: 0;
 }
 
 :root {
@@ -13,6 +14,15 @@
     --black-dnc: #303030;
     --silver: #C9C9C9;
     --font-default: 'Inter';
+}
+
+body{
+    background: linear-gradient(#0C70F2, #303030);
+}
+
+button:hover {
+    transform: translateY(-4px);
+    transition-duration: 1s;
 }
 
 #navegacao {
@@ -25,7 +35,7 @@
 }
 
     #navegacao > button {
-       background-color: var(--blue-dnc);
+        background-color: var(--blue-dnc);
         color: white;
         padding: 10px 20px;
         border: none;
@@ -35,10 +45,99 @@
         cursor: pointer;
     }
 
-#menu li{
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+#menu {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
 }
 
+    #menu li{
+        list-style-type: none;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        text-shadow: 1px 1px#494b4e93;
+    }
+
+    #menu li:hover{
+        color: var(--silver);
+    }
+
+
+
+#titleAndText-header {
+    display: grid;
+    grid-auto-flow: column 1fr;
+}
+
+    #titleAndText-header h1 {
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        font-size: 55px;
+        font-weight: 800;
+        text-shadow: 2px 1px 0.5px #303030;
+        margin-top: 5.5rem;
+    }
+
+    #titleAndText-header p {
+        text-align: center;
+        color: white;
+        font-size: 35px;
+        font-weight: 500;
+        text-shadow: 1px 1px 0.5px #303030;
+        margin-top: 30px;
+    }
+
+    .invert-text {
+        background-color: black;
+    }
+
+#container-form {
+    display: grid;
+    grid-auto-flow: column 1fr;
+    margin-top: 150px;
+    justify-content: center;
+}
+
+    #container-form button {
+        background-color: var(--blue-dnc);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 22px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .div-form {
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+    }
+
+    .div-form label {
+        color: white;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 2px;
+    }
+
+    .div-form input{
+        height: 35px;
+        border: 0;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .div-formCheck {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    

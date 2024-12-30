@@ -11,7 +11,7 @@
     <nav id="navegacao">
        <ul id="menu">
             <li>Home</li>
-            <li>Sobre</li>
+            <li>Sobre Nós</li>
             <li>Contato</li>
        </ul>
        <button>Login</button> 
@@ -19,39 +19,48 @@
     <!-- Titulo e texto do formulário -->
     <header id="titleAndText-header">
         <h1>Bootcamp DNC</h1>
-        <p>Esse será um evento exclusivo para todos os alunos
-            da <b>DNC</b>, que querem <span class="invert-text">acelerar sua carreira</span> com uma
-            semana intensiva de conteúdo de mercado entre
-            <span class="invert-text">BACK-END, FRONT-END & BANCO DE DADOS.</span>
+        <p>Esse será um evento exclusivo para todos os alunos <br>
+            da <b>DNC</b>, que querem <span class="invert-text">acelerar sua carreira</span> com uma <br>
+            semana intensiva de conteúdo de mercado entre <br> 
+            <span class="invert-text">BACK-END, FRONT-END & BANCO DE DADOS.</span> <br>
         </p>
     </header>
     <!-- Menu Formulario -->
     <form id="container-form">
-        <div>
+        <div class="div-form">
             <label>Nome:</label>
             <input type="text" id="Nome" name="Nome" placeholder="Insira seu nome" required>
         </div>
-        <div>
+        <div class="div-form">
             <label>Sobrenome:</label>
             <input type="text" id="Sobrenome" name="Sobrenome" placeholder="Insira seu sobrenome" required>
         </div>
-        <div>
-            <label>Area de interesse:</label>
-            <input type="checkbox" value="FRONT-END"> FRONT-END
-            <input type="checkbox" value="BACK-END"> BACK-END
-            <input type="checkbox" value="BANCO DE DADOS"> BANCO DE DADOS
+        <div class="div-formCheck">
+            <label>Area de interesse:</label> <br>
+            <div>
+                <input type="checkbox" value="FRONT-END"> 
+                <label>FRONT-END</label>
+            </div>
+            <div>
+                <input type="checkbox" value="BACK-END">
+                <label>BACK-END</label>
+            </div>
+            <div>
+                <input type="checkbox" value="BANCO DE DADOS">
+                <label>BANCO DE DADOS</label>
+            </div>
         </div>
-        <div>
+        <div class="div-form">
             <label>E-mail:</label>
             <input type="email" id="E-mail" name="E-mail" placeholder="Ex: kevinn@gmail.com" required>
         </div>
-        <div>
+        <div class="div-form">
             <label>Telefone:</label>
             <input type="text" id="Telefone" name="Telefone" placeholder="Ex: (21) 99999-9999" required>
         </div>
-        <div>
+        <div class="div-form">
             <label>Insira um frase criativa aqui:</label>
-            <input type="text" id="frase" name="Frase" placeholder="Digite uma frase boa pra nós " required>
+            <input type="text" id="frase" name="Frase" placeholder="Digite uma frase boa pra nós!" required>
         </div>
         <button type="submit">Cadastrar</button>
     </form>
